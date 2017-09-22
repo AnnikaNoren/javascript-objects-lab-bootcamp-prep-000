@@ -12,7 +12,7 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value){
 }
 
 function deleteFromObjectByKey(object, key){
-  var newRecipes = recipes.assign({}, object);
+  var newRecipes = Object.assign({recipes}, object);
   delete newRecipes[key]
   return object;
 }
